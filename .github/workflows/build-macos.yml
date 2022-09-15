@@ -21,16 +21,16 @@ jobs:
       - run: brew install create-dmg
       - run: pip install -r requirements.txt
       - run: pyinstaller --onefile --name "FS22 Vehicle Sorter" --windowed main.py
-      - run: > 
-             create-dmg 
-                --volname "FS22 Vehicle Sorter Installer" 
-                --window-pos 200 120 
-                --window-size 800 400 
-                --icon-size 100 
-                --icon "FS22 Vehicle Sorter.app" 200 190 
-                --hide-extension "FS22 Vehicle Sorter.app" 
-                --app-drop-link 600 185 
-                "dist/FS22-Vehicle-Sorter-Installer.dmg" 
+      - run: | 
+             create-dmg \
+                --volname "FS22 Vehicle Sorter Installer" \
+                --window-pos 200 120 \
+                --window-size 800 400 \
+                --icon-size 100 \
+                --icon "FS22 Vehicle Sorter.app" 200 190 \
+                --hide-extension "FS22 Vehicle Sorter.app" \
+                --app-drop-link 600 185 \
+                "dist/FS22-Vehicle-Sorter-Installer.dmg" \
                 "dist/FS22 Vehicle Sorter.app/"
 
       - uses: actions/upload-artifact@v3
