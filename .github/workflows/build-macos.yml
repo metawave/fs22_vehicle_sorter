@@ -14,10 +14,10 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.12'
       - run: brew install create-dmg
       - run: pip install -r requirements.txt
       - run: pyinstaller --onefile --name "FS22 Vehicle Sorter" --windowed main.py
