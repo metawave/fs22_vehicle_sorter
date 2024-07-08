@@ -33,6 +33,6 @@ jobs:
                 "dist/FS22-Vehicle-Sorter-Installer.dmg" \
                 "dist/FS22 Vehicle Sorter.app/"
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           path: "dist/FS22-Vehicle-Sorter-Installer.dmg"
