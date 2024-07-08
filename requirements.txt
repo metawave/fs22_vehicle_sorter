@@ -1,2 +1,2 @@
 FreeSimpleGUI~=5.1.0
-pyinstaller~=5.3
+pyinstaller~=6.9.0
