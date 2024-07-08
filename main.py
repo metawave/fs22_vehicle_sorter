@@ -1,7 +1,7 @@
 import os.path
 import sys
 
-import PySimpleGUI as sg
+import FreeSimpleGUI as sg
 
 from model import Vehicle
 from vehicle_xml import VehiclesXml
